@@ -1,0 +1,33 @@
+Javascript : (10days time)--1997[ecma: European Computer Manufacturers Association]-2015(standard version of js (es6))
+▶is Prototype Based object Oriented Programing language
+ 🏹Prototype: replica (predefined structure)
+▶it single Threaded ,synchronous ,Highlevel scripting language
+ 🏹synchronous : line by excution (one after the other)
+
+
+ WHY ? WHEN ? WHERE ?
+ 1 To MAke The Application DYnamic(cliking the button ,fetching the data ,reloading page etc)
+ 2.CRUD : CREATE READ UPDATE  DELETE 
+ 3.FormVALIDATION (client side validation -js server-side validation : nodejs)
+ 4.calculation ,notification  ,popups
+ 5.search functionality ,filter functionality
+ 6.fetching the data (from server,eg:weatherapp ),storing the data (mongodb)
+
+ JS FRAMEWORKS :
+  React 
+  angular
+  jquery
+  3js, vuejs,nest js ,redux ,popperjs etc 
+  nodejs(runtime environment)-expressjs,
+
+
+TYPES OF JS (different ways to write the js code)
+ 1.inline js
+ 2.internal js
+ 3.external js
+
+ PRINTING STATEMENTS IN JS
+ 1.document.write() : it is used to write content on the webpage 
+ 2.console.log(): it is used to write content on the browser console(to check errors warning debbuging)
+ 3.alert() :it is used to provide a notification kind of content to user
+ 4.innerText ,innerHTML : these is used for Overriding the existing content or to  write a new content
