@@ -71,9 +71,9 @@ function Add(a){
 // bookmyshow3("RRR","C16") // vishwas
 
 // REST PARAMETERS : ...rest
-function bookmyshow4(movie="no-movie-selected",ticket="no-seat-selcted",...rest){ //parameters,params,formal parameters
-    console.log(movie,'ticket is booked seat:',ticket,rest )
-}
+// function bookmyshow4(movie="no-movie-selected",ticket="no-seat-selcted",...rest){ //parameters,params,formal parameters
+//     console.log(movie,'ticket is booked seat:',ticket,rest )
+// }
 
 // bookmyshow4() // ravi
 // bookmyshow4("RRR","C16","kphb","arjun",1500) // vishwas
@@ -86,17 +86,17 @@ function bookmyshow4(movie="no-movie-selected",ticket="no-seat-selcted",...rest)
 // console.log(res+50)
 
 // one function passed as argumnet to another functions and returned as a value those function are called higher-order-function /callback functions
-function data(a,b){
-   console.log("data function")
-  a() //callback functions
-  b()
-}
+// function data(a,b){
+//    console.log("data function")
+//   a() //callback functions
+//   b()
+// }
 
-function data1(){
-    console.log("data1 function")
-}
+// function data1(){
+//     console.log("data1 function")
+// }
 
-data(data1,function data2(){console.log("doubt")})
+// data(data1,function data2(){console.log("doubt")})
 
 
 // QA 
@@ -113,8 +113,122 @@ data(data1,function data2(){console.log("doubt")})
 // function expression ,iffe functions ,
 // methods: call apply and bind 
 
+// this keyword points to object location based on context it is called
+
+// console.log(this) // globalscope-window
+
+// function Data(){
+//     console.log(this) // function-scope-window
+// }
+// Data()
+
+
+// let a={
+//     name:"ramu",
+//     age:24,
+//     // method-cureent object
+//     deatils:function(){
+//         console.log(this.name)}
+
+// }
+
+// constructor functions 
+// function Person(name,age,about){
+//      this.name=name
+//      this.age=age
+//      this.about=about
+// }
+// let ravi=new Person("ravi",24,"good boy")
+// console.log(ravi)
+
+// call apply and bind methods in js 
+// it is used to change the this reference 
+// In JavaScript, call(), apply(), and bind() are methods that allow you to control the value of this (the execution context) within a function. 
+
+var salary=10000
+let raju={
+    salary:1000
+}
+let ramu={
+    salary:1000
+}
+let vishwas={
+    salary:2000000
+}
+function exampleda(name,c){
+    
+    console.log(this.salary,name,c)
+}
+
+exampleda.call(vishwas,"vishwas")
+exampleda.call(ramu,"ramu","tcs")
+exampleda.call(raju,"raju")
+exampleda.apply(vishwas,["vishwas","google"])
+let a=exampleda.bind(ramu,"ramu")
+console.log(a())
+// // calling the method
+// a.deatils()
+
+// // anonoumous function  function with name we call anonomous 
+//  var a1=function (a){
+//          console.log("😂😁😀",a)
+//          return a
+
+//  }
+
+// //  called with variable names
+// let res=a1(2)*3
+// console.log(res)
+// // Defference b/w arrow and normal functions 
+
+// // arrow function are syntatic sugar of named function 
+// // syntax: let data=()=>{}
+
+// // 1.arrow function doesnt req paranthesis when single parameters is passed ;
+// // 1.arrow function doesnt req curlybraces-{} when single statements is passed ;
+// // arrow function has implicit return statetment
+// // eg:
+// let data=a=>a*4
+// let res1=data(2)*4
+// console.log(res1)
+
+// // arrow function width multiple params and statements requires the () & {}
+
+// let a3=(a,b)=>{
+//     return a*b
+// }
+
+// let res6=a3(2,4)
+// console.log(res6)
+
+// arrow functions doest have its own these binding and it should not be used as methods 
+
+// IFFE  Immediately invoked function expression 
+// let data1=(function(){
+//     console.log("hello")}())
+
+//     var a=10
+   
+// var data= (function(){var a=20}())
+
+//     {
+//       (function(){var a=20}())
+//     }
+// console.log(a)
 
 
 
 
 
+// Hoisting in function 
+// moving all declaration to top of there scope 
+// Hoisted: Named functions are hoisted, meaning you can call them before they are declared in your code.
+// Not Hoisted: Arrow functions are not hoisted. They behave like variables declared with let or const. You cannot call them before they are declared in your code.
+
+Hoistda()
+function Hoistda(){
+  console.log("hello")
+}
+
+console.log(a1())
+var a1=()=>{console.log("hello")}
