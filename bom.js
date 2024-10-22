@@ -56,24 +56,62 @@
 // let res4=sessionStorage.setItem("data","vishwas")
 
 // navigator :Navigator object that contains information about the web browser
-console.log(navigator.appCodeName)
-console.log(navigator.appVersion)
-console.log(navigator.languages)
-console.log(navigator.vendor)
+// console.log(navigator.appCodeName)
+// console.log(navigator.appVersion)
+// console.log(navigator.languages)
+// console.log(navigator.vendor)
 
-console.log(location)
-console.log(location.href)
-console.log(location.port)
-console.log(location.protocol)
-console.log(location.pathname)
-console.log(location.host)
+// console.log(location)
+// console.log(location.href)
+// console.log(location.port)
+// console.log(location.protocol)
+// console.log(location.pathname)
+// console.log(location.host)
 
 // if(location.protocol !== "https"){
 //     alert("site is not secure")
 // }
 
-function openpage(){
-    location.href="https://www.amazon.in/gp/cart/view.html?ref_=nav_cart"
-    //   location.assign("https://www.amazon.in/gp/cart/view.html?ref_=nav_cart")
-    //  location.replace("https://www.amazon.in/gp/cart/view.html?ref_=nav_cart")
+// console.log(innerHeight)
+// console.log(innerWidth)
+// console.log(outerHeight)
+// console.log(outerWidth)
+
+
+
+
+// console.log(screen)
+// console.log(screen.availHeight)
+// console.log(screen.availWidth)
+// console.log(screen.colorDepth)
+// console.log(screen.orientation)
+
+// console.log(history)
+
+// function Data(){
+//     history.forward()
+// }
+
+
+// setTimeout(function(){
+
+// },time)
+// setTimeout(()=>{
+    
+// },time)
+
+
+document.write("hello <br/>" ,)
+setTimeout(() => {
+    for(let i=0;i<1000;i++){
+        document.write("😜")
     }
+}, 1000);
+document.write("hell02 <br/>")
+document.write("hell3 <br/>")
+setTimeout(() => {
+    console.log("hello")
+}, 1000);
+setInterval(() => {
+    console.log("hello")
+}, 1000);
